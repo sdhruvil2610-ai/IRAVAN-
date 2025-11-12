@@ -1,0 +1,10 @@
+google-adk==1.16.*
+google-genai
+google-cloud-logging
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+google-api-python-client
+gspread
+python-dotenv
+pandas

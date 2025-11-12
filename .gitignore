@@ -1,0 +1,12 @@
+.env
+*.pyc
+__pycache__/
+*.pkl
+*.log
+*.json
+*.csv
+*.ipynb_checkpoints/
+venv/
+agent-env/
+.envrc
+.DS_Store
