@@ -1,0 +1,92 @@
+{
+  "questions": [
+    {
+      "variable": "Project_Name",
+      "question": "What is the name of your project?"
+    },
+    {
+      "variable": "Financial_Gain",
+      "question": "What measurable financial benefits will this project generate, such as revenue growth or cost savings?"
+    },
+    {
+      "variable": "Strategic_Gain",
+      "question": "How does this project align with the company's strategic goals or competitive priorities?"
+    },
+    {
+      "variable": "Operational_Efficiency",
+      "question": "To what extent will this project improve process efficiency or operational performance?"
+    },
+    {
+      "variable": "Productivity_Gain",
+      "question": "How will this project enhance employee productivity or reduce manual work?"
+    },
+    {
+      "variable": "Urgency",
+      "question": "How urgent is this project? Are there external deadlines, regulatory pressures, or market needs driving it?"
+    },
+    {
+      "variable": "Build_CapEx",
+      "question": "What is the estimated capital expenditure required to initiate or build the project?"
+    },
+    {
+      "variable": "Runtime_OpEx",
+      "question": "What are the expected ongoing operational expenses (OpEx) to maintain this project?"
+    },
+    {
+      "variable": "Maintain_Cost",
+      "question": "What level of maintenance effort or cost will be required after deployment?"
+    },
+    {
+      "variable": "Payback_Period",
+      "question": "How long will it take for this project to achieve a positive return on investment (ROI)?"
+    },
+    {
+      "variable": "Direct_OKR_Link",
+      "question": "Is this project directly linked to any company-wide or departmental OKRs?"
+    },
+    {
+      "variable": "Competitive_Edge",
+      "question": "Does this project provide a competitive advantage or create a market differentiator?"
+    },
+    {
+      "variable": "Capability_Building",
+      "question": "Will this project help the organization build new skills, technologies, or operational capabilities?"
+    },
+    {
+      "variable": "Compliance_Fit",
+      "question": "Does this project address any regulatory, compliance, or audit-related requirements?"
+    },
+    {
+      "variable": "Technical_Effort",
+      "question": "What level of technical effort or complexity is required to implement this project?"
+    },
+    {
+      "variable": "Data_Readiness",
+      "question": "Is the necessary data available, accessible, and of good quality for this project?"
+    },
+    {
+      "variable": "Adoption_Load",
+      "question": "How difficult will it be for users or teams to adopt and integrate this solution into daily operations?"
+    },
+    {
+      "variable": "Skill_Gaps",
+      "question": "Does your team have the required skills to execute and maintain this project effectively?"
+    },
+    {
+      "variable": "Tool_Stack_Fit",
+      "question": "How well does this project fit with your current technology stack and infrastructure?"
+    },
+    {
+      "variable": "Sponsor_Support",
+      "question": "Does this project have strong sponsorship or advocacy from leadership?"
+    },
+    {
+      "variable": "Expectation_Clarity",
+      "question": "Are the goals, deliverables, and success metrics of this project clearly defined?"
+    },
+    {
+      "variable": "Compliance",
+      "question": "Does this project adhere to internal company policies, legal frameworks, or ethical standards?"
+    }
+  ]
+}

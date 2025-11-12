@@ -1,0 +1,16 @@
+{
+  "remaining_variables": [
+    "criteria"
+  ],
+  "current_variable": "Project_Name",
+  "asked_questions": {
+    "Project_Name": []
+  },
+  "answers": {
+    "Project_Name": []
+  },
+  "current_question": {
+    "text": "What is the name of your project?"
+  },
+  "hitl_stage": "await_user"
+}

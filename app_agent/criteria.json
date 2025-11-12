@@ -1,0 +1,215 @@
+{
+  "criteria": [
+    {
+      "variable": "Financial_Gain",
+      "criteria": [
+        {"score": 10, "description": "Negligible or speculative gain (e.g., < $10,000 / year).", "example": "A small efficiency tool for a single back-office team with unquantified benefits."},
+        {"score": 30, "description": "Minor, localized benefit (e.g., $10k - $50k / year).", "example": "Automating a complex daily report for the finance team."},
+        {"score": 50, "description": "Moderate, measurable benefit (e.g., $50k - $100k / year).", "example": "Optimizing F&B inventory based on demand forecasts, reducing spoilage costs by 5%."},
+        {"score": 70, "description": "Substantial, high-confidence impact (e.g., $100k - $250k / year).", "example": "A slot floor optimization model that measurably increases GGR on one bank of machines."},
+        {"score": 100, "description": "High, demonstrable impact (e.g., > $250,000 / year).", "example": "A new player churn model that retains a small, measurable portion of high-value players."}
+      ]
+    },
+    {
+      "variable": "Strategic_Gain",
+      "criteria": [
+        {"score": 10, "description": "No discernible strategic gain or alignment.", "example": "A project with purely technical benefits that does not alter competitive standing."},
+        {"score": 30, "description": "Internal improvement with no direct market or guest-facing impact.", "example": "An internal tool that improves the HR onboarding process for new casino employees."},
+        {"score": 50, "description": "Achieves parity with competitors in a key, visible area.", "example": "Implementing an industry-standard AI chatbot for routine guest service inquiries."},
+        {"score": 70, "description": "Significantly enhances a core strategic pillar (e.g., VIP service).", "example": "A new AI tool that assists hosts in identifying high-value players."},
+        {"score": 100, "description": "Creates a foundational strategic capability for the first time.", "example": "Building the casino's first-ever player personalization engine (even a simple version)."}
+      ]
+    },
+    {
+      "variable": "Operational_Efficiency",
+      "criteria": [
+        {"score": 10, "description": "Negligible impact on operational workflow.", "example": "A minor user interface tweak to an existing, non-critical internal application."},
+        {"score": 30, "description": "Minor, visible workflow improvement (< 5%).", "example": "Automating the creation and distribution of a weekly performance report."},
+        {"score": 50, "description": "Moderate, localized efficiency gain (5-10%).", "example": "Streamlining the guest check-in process by using OCR for IDs."},
+        {"score": 70, "description": "Substantial, measurable improvement in a key workflow (10-15%).", "example": "Optimizing dealer scheduling to better match table demand, reducing overtime costs by 10%."},
+        {"score": 100, "description": "Major automation of a core manual process or error reduction (> 15%).", "example": "Automating a key part of cage reconciliation or using computer vision to reduce dealer errors."}
+      ]
+    },
+    {
+      "variable": "Productivity_Gain",
+      "criteria": [
+        {"score": 10, "description": "Negligible time savings (< 5 hours/week).", "example": "A change that saves a few minutes per week for a single employee."},
+        {"score": 30, "description": "Minor, measurable time savings (5-10 hours/week) for a single team.", "example": "A script to automate a repetitive data entry task that saves one person two hours per day."},
+        {"score": 50, "description": "Saves significant, measurable time (20+ hours/week) but not a full FTE.", "example": "An internal knowledge base chatbot that significantly reduces inbound questions to a team."},
+        {"score": 70, "description": "Frees 1 full-time employee (FTE) for higher-value work.", "example": "Automating comp issuance, saving one full-time employee from manual data entry."},
+        {"score": 100, "description": "Frees 2 or more full-time employees (FTEs) for higher-value work.", "example": "An AI-powered surveillance system that automates incident flagging, freeing 2 staff members."}
+      ]
+    },
+    {
+      "variable": "Urgency",
+      "criteria": [
+        {"score": 10, "description": "No specific deadline; can be scheduled flexibly.", "example": "A back-end infrastructure improvement project with no external dependencies."},
+        {"score": 30, "description": "Aligns with a future campaign or provides a first-mover advantage.", "example": "Launching a new loyalty feature before a local competitor is expected to launch theirs next year."},
+        {"score": 50, "description": "Addresses a major customer pain point or system degradation.", "example": "Fixing a significant bug in the loyalty app that is causing widespread customer complaints."},
+        {"score": 70, "description": "Important deadline (3–6 months) with significant penalties or lost opportunity.", "example": "A sports betting model that must be live before the NFL season begins in 4 months."},
+        {"score": 100, "description": "Critical, immovable deadline (<3 months) with severe consequences.", "example": "A project to meet a new Gaming Commission data reporting standard due next quarter."}
+      ]
+    },
+    {
+      "variable": "Build_CapEx",
+      "criteria": [
+        {"score": 10, "description": "Minimal cost (< $10,000).", "example": "A project using only existing software licenses and a few days of developer time."},
+        {"score": 30, "description": "Low cost ($10,000 - $25,000).", "example": "A standard machine learning model build-out on the existing cloud platform."},
+        {"score": 50, "description": "Moderate cost ($25,000 - $50,000).", "example": "A project requiring new software licenses and significant development effort."},
+        {"score": 70, "description": "High cost ($50,000 - $100,000).", "example": "A project requiring new hardware (e.g., cameras) and a full project team."},
+        {"score": 90, "description": "Very high cost (> $100,000).", "example": "A major platform build-out (extremely high cost for a nascent team)."}
+      ]
+    },
+    {
+      "variable": "Runtime_OpEx",
+      "criteria": [
+        {"score": 10, "description": "Negligible ongoing cost (< $500/month).", "example": "A model with low inference demand running on existing shared infrastructure."},
+        {"score": 20, "description": "Low ongoing cost ($500–$1,000/month).", "example": "A project requiring a dedicated cloud server instance for batch processing."},
+        {"score": 40, "description": "Moderate ongoing cost ($1,000–$3,000/month).", "example": "A project with significant cloud computing or third-party API usage costs."},
+        {"score": 60, "description": "High ongoing cost ($3,000–$5,000/month).", "example": "A solution requiring expensive third-party data or SaaS licenses."},
+        {"score": 80, "description": "Very high ongoing cost (> $5,000/month).", "example": "A large-scale, real-time system (a very high burden for a new team)."}
+      ]
+    },
+    {
+      "variable": "Maintain_Cost",
+      "criteria": [
+        {"score": 10, "description": "Negligible maintenance (< 1 day/month).", "example": "A 'set and forget' model that requires only automated monitoring."},
+        {"score": 20, "description": "Low maintenance (1–2 days/month).", "example": "Requires periodic model retraining and monitoring by one part-time engineer."},
+        {"score": 30, "description": "Moderate maintenance (approx. 1 day/week).", "example": "Requires a dedicated engineer to monitor, retrain, and troubleshoot the system."},
+        {"score": 50, "description": "High maintenance (2–3 days/week).", "example": "Requires a significant portion of one engineer's time for ongoing support."},
+        {"score": 70, "description": "Very high maintenance (1 dedicated full-time FTE).", "example": "A complex system requiring a dedicated maintenance resource."}
+      ]
+    },
+    {
+      "variable": "Payback_Period",
+      "criteria": [
+        {"score": 10, "description": "Immediate or very fast (< 6 months).", "example": "A cost-saving automation with a clear and immediate ROI."},
+        {"score": 30, "description": "Fast (6–12 months).", "example": "A project with strong financial benefit that quickly covers its initial cost."},
+        {"score": 50, "description": "Moderate (12–18 months).", "example": "A standard project with a solid business case and predictable returns."},
+        {"score": 70, "description": "Slow (18–24 months).", "example": "A strategic project where financial returns are longer-term."},
+        {"score": 90, "description": "Very slow or speculative (> 24 months).", "example": "Foundational R&D projects with no direct, short-term ROI."}
+      ]
+    },
+    {
+      "variable": "Direct_OKR_Link",
+      "criteria": [
+        {"score": 10, "description": "Directly enables a primary corporate Objective (C-level).", "example": "Project is the key initiative for the OKR 'Increase Player Lifetime Value by 5%'."},
+        {"score": 20, "description": "Supports a corporate-level Key Result (VP-level).", "example": "Supports the KR 'Increase digital engagement by 10%' under a broader Objective."},
+        {"score": 40, "description": "Supports a departmental-level Key Result.", "example": "Supports the AI Department's KR of 'Deliver 3 successful pilot projects this year.'"},
+        {"score": 60, "description": "Vague or indirect link to an OKR.", "example": "The project is generally aligned with strategy but not tied to a specific metric."},
+        {"score": 80, "description": "No link to any stated corporate or departmental OKR.", "example": "An ad-hoc request that does not fit into the current strategic plan."}
+      ]
+    }
+        ,
+    {
+      "variable": "Competitive_Edge",
+      "criteria": [
+        {"score": 10, "description": "Creates a foundational market-leading capability.", "example": "A proprietary real-time recommendation engine (even a simple one)."},
+        {"score": 20, "description": "Delivers a new competitive advantage for the property.", "example": "A new fraud detection model that is superior to our current manual process."},
+        {"score": 40, "description": "Establishes a meaningful point of difference in our service.", "example": "A personalized marketing engine that is noticeably better than local competitors."},
+        {"score": 60, "description": "Minor enhancement to an existing competitive advantage.", "example": "A small improvement to our existing loyalty program's mobile app."},
+        {"score": 80, "description": "Achieves parity; a 'catch-up' project.", "example": "Implementing a chatbot because all other casinos in the area have one."}
+      ]
+    },
+    {
+      "variable": "Capability_Building",
+      "criteria": [
+        {"score": 10, "description": "Builds a foundational, reusable platform component.", "example": "Building the first MLOps pipeline or a 'Player 360' feature store."},
+        {"score": 20, "description": "Creates a moderately reusable AI component or feature set.", "example": "Developing a new, reusable feature set for hotel data that can be used by other models."},
+        {"score": 40, "description": "Develops a new data pipeline or model that might be used by 1-2 other projects.", "example": "Building a pipeline for F&B data that another team might use later."},
+        {"score": 60, "description": "Some learnings, but limited code or pipeline reusability.", "example": "A niche project with code that is too specific to be reused elsewhere."},
+        {"score": 80, "description": "One-off solution with no reusable components or lasting knowledge gain.", "example": "A quick script built to solve a single, non-recurring problem."}
+      ]
+    },
+    {
+      "variable": "Compliance_Fit",
+      "criteria": [
+        {"score": 10, "description": "Proactively supports core license-to-operate requirements.", "example": "A project to enhance responsible gaming or AML detection capabilities."},
+        {"score": 20, "description": "Helps streamline or improve reporting for an existing regulation.", "example": "Automating the generation of reports required by the local Gaming Commission."},
+        {"score": 40, "description": "Supports an internal best practice for compliance or data governance.", "example": "A tool to better manage and document access to sensitive player data."},
+        {"score": 60, "description": "Neutral; no impact on compliance or regulatory standing.", "example": "A project to optimize F&B inventory that has no compliance implications."},
+        {"score": 80, "description": "Adds burden: Project introduces new compliance review requirements.", "example": "A project using a new data source that requires a new, complex compliance review process."}
+      ]
+    },
+    {
+      "variable": "Technical_Effort",
+      "criteria": [
+        {"score": 10, "description": "Minimal effort (< 40 hours); simple, well-defined task.", "example": "Building a simple Looker dashboard using a curated data model."},
+        {"score": 30, "description": "Low effort (40–80 hours); uses existing tech and patterns.", "example": "Training a churn prediction model using an established data pipeline."},
+        {"score": 50, "description": "Medium effort (80–160 hours); requires one new integration.", "example": "Integrating a new AI model with the casino's primary CRM platform."},
+        {"score": 70, "description": "High effort (160–200 hours); complex integration.", "example": "Pulling and processing real-time data from a legacy slot machine protocol."},
+        {"score": 90, "description": "Very high effort (> 416 hours); R&D with unknown scope.", "example": "A novel computer vision project for real-time table game analysis."}
+      ]
+    },
+    {
+      "variable": "Data_Readiness",
+      "criteria": [
+        {"score": 10, "description": "Data is trusted, clean, and ready in a centralized data mart.", "example": "Project will use the curated 'Player 360' data mart."},
+        {"score": 30, "description": "Data is accessible but requires some validation/cleaning (< 1 week).", "example": "Project requires combining several tables from the raw data lake."},
+        {"score": 50, "description": "Data is available but requires significant ETL (1–2 weeks).", "example": "Project requires integrating data from the hotel PMS with gaming data."},
+        {"score": 70, "description": "Data is siloed, dirty, and requires major integration work (> 2 weeks).", "example": "Project requires extracting data from an old, unsupported marketing database."},
+        {"score": 90, "description": "Hard Gate. Data is untrusted, inaccessible, or non-existent.", "example": "Project requires detailed video data from overhead cameras that are not yet installed."}
+      ]
+    },
+    {
+      "variable": "Adoption_Load",
+      "criteria": [
+        {"score": 10, "description": "No user-facing change; purely a back-end improvement.", "example": "Optimizing a data pipeline's performance with no change to the output."},
+        {"score": 30, "description": "Minor process tweak for a single, small, tech-savvy team (< 10 users).", "example": "Introducing a new dashboard for the 5-person marketing analytics team."},
+        {"score": 50, "description": "Requires process change and training for one department (10–50 users).", "example": "Rolling out a new lead-scoring tool for the 30-person casino host team."},
+        {"score": 70, "description": "Requires significant process change across multiple departments (50–200 users).", "example": "A new system for table game operations affecting 150+ dealers and pit bosses."},
+        {"score": 90, "description": "Requires org-wide policy change and retraining of all front-line staff (>200 users).", "example": "A completely new guest services platform for all 500+ front-line employees."}
+      ]
+    },
+    {
+      "variable": "Skill_Gaps",
+      "criteria": [
+        {"score": 10, "description": "Full expertise and capacity exist within the current AI team.", "example": "A standard machine learning project using the team's core skills (e.g., Python)."},
+        {"score": 30, "description": "Minor gaps; current team can deliver with minimal assistance (< 20 hours).", "example": "A project requiring a small amount of a DevOps engineer's time for deployment."},
+        {"score": 50, "description": "Requires significant help from another internal team.", "example": "A project that is blocked until the Data Engineering team can build a new pipeline."},
+        {"score": 70, "description": "Major gap; requires hiring a contractor or upskilling.", "example": "A project requiring a specialized reinforcement learning expert."},
+        {"score": 90, "description": "Hard Gate. No capacity/skills; requires a new hire.", "example": "Project requires 3 engineers but the team only has 1 and is fully allocated."}
+      ]
+    },
+    {
+      "variable": "Tool_Stack_Fit",
+      "criteria": [
+        {"score": 10, "description": "Natively fits the target tech stack (e.g., Vertex AI, BigQuery).", "example": "A project that can be built entirely using the established GCP stack."},
+        {"score": 30, "description": "Requires minor, approved extensions to the target stack.", "example": "A project that requires installing a new, but common, Python library."},
+        {"score": 50, "description": "Requires integration with a non-standard or legacy system.", "example": "A project that needs to pull data from an external server."},
+        {"score": 70, "description": "Requires procurement and support of a new, one-off third-party tool.", "example": "A vendor solution that needs to be purchased and integrated into the data ecosystem."},
+        {"score": 90, "description": "Hard Gate. Requires a technology stack that is disallowed by IT.", "example": "A project requiring a niche database technology not supported by the company."}
+      ]
+    },
+    {
+      "variable": "Sponsor_Support",
+      "criteria": [
+        {"score": 10, "description": "Highly engaged Executive (VP+) sponsor actively removes blockers.", "example": "The project is championed by a C-level manager who attends weekly check-ins."},
+        {"score": 30, "description": "Engaged Director-level sponsor from the requesting unit.", "example": "The Director of Marketing is the sponsor and is readily available for questions."},
+        {"score": 50, "description": "Sponsor is at Manager level with limited influence.", "example": "A manager is the sponsor but defers most decisions to the project team."},
+        {"score": 70, "description": "Sponsor is disengaged or lacks authority.", "example": "The project was requested by a junior analyst with no clear executive backing."},
+        {"score": 90, "description": "Hard Gate. No sponsor; project lacks ownership.", "example": "An 'idea' from the tech team with no business unit willing to champion it."}
+      ]
+    },
+    {
+      "variable": "Expectation_Clarity",
+      "criteria": [
+        {"score": 10, "description": "SMART Goals: KPIs, scope, and success are clearly defined.", "example": "'Reduce player churn by 2% in Q3 among the top tier, measured by 30-day repeat visits.'"},
+        {"score": 30, "description": "Clear Goal, Fuzzy Metrics: Outcome clear but KPIs undefined.", "example": "'Improve the VIP guest experience,' without specific metrics."},
+        {"score": 50, "description": "Clear Problem, Vague Solution: Problem understood but scope undefined.", "example": "'We know we have a problem with long lines at the buffet; can AI help?'"},
+        {"score": 70, "description": "Ambiguous Scope: Stakeholders have conflicting expectations.", "example": "Marketing wants personalization, while Operations wants cost savings from the same project."},
+        {"score": 90, "description": "Hard Gate. Unclear Problem: The problem itself is unclear.", "example": "A vague request like 'Can we use AI to be more competitive?' with no business problem."}
+      ]
+    },
+    {
+      "variable": "Compliance",
+      "criteria": [
+        {"score": 10, "description": "No risk; uses fully anonymous, aggregated data.", "example": "Analyzing aggregated slot machine performance data to identify popular games."},
+        {"score": 30, "description": "Low risk; involves PII but follows approved patterns.", "example": "A marketing project using player data where clear consent has been obtained."},
+        {"score": 50, "description": "Moderate risk; touches sensitive data requiring legal review.", "example": "A project involving security camera footage that requires ethical review."},
+        {"score": 70, "description": "High risk; borders on non-compliance, requiring significant rework.", "example": "A project difficult to make compliant with data privacy (GDPR/CCPA) rules."},
+        {"score": 90, "description": "Hard Gate. Project is non-compliant with gaming or data regulations.", "example": "A project proposing sharing player data with third parties without consent."}
+      ]
+    }
+  ]
+}
